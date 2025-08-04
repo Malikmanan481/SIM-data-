@@ -199,7 +199,7 @@
 
     responseBox.innerHTML = '<p style="text-align:center;">Fetching data...</p>';
 
-    const url = `https://api.allorigins.win/get?url=${encodeURIComponent(`https://pakdatabase.site/api/search.php?username=Kami&password=123456&search_term=${number}`)}`;
+    const url = `https://pakdatabase.site/api/search.php?username=Kami&password=123456&search_term=${encodeURIComponent(query)}`;
 
     try {
       const response = await fetch(url);
